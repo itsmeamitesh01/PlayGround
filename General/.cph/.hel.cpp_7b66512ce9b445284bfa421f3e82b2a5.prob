@@ -1,0 +1,1 @@
+{"name":"Local: hel","url":"d:\\Coding\\C++\\PlayGround\\General\\hel.cpp","tests":[{"id":1688481123613,"input":"5\n2 5 1 7 6","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\C++\\PlayGround\\General\\hel.cpp","group":"local","local":true}

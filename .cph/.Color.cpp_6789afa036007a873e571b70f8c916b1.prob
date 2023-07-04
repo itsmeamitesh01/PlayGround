@@ -1,0 +1,1 @@
+{"name":"Local: Color","url":"d:\\LetsLearnGit\\Color.cpp","tests":[{"id":1661684265684,"input":"5\nrb\nbr\ncc\nwb\naa\naa\nab\ncd\nyy\nxx","output":"1\n2\n0\n3\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\LetsLearnGit\\Color.cpp","group":"local","local":true}

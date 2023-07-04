@@ -1,0 +1,1 @@
+{"name":"Local: AdjacencyList","url":"d:\\Striver\\Graph\\AdjacencyList.cpp","tests":[{"id":1661688895099,"input":"3 3\n0 1\n1 2\n2 0","output":"0->1 2\n1->0 2\n2->1 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Striver\\Graph\\AdjacencyList.cpp","group":"local","local":true}

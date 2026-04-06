@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 class Node{
@@ -147,7 +147,7 @@ void MiddleElement(Node* &head)
 {
     Node* fast = head;
     Node* slow = head;
-    while(fast != NULL and fast -> next != NULL)
+    while(fast != NULL && fast -> next != NULL)
     {
         slow = slow -> next;
         fast = fast -> next -> next;
@@ -170,7 +170,7 @@ void removeelement(Node* &head , int data)
     }
         
     Node* temp = head;
-    while(temp != NULL and temp -> next != NULL)
+    while(temp != NULL && temp -> next != NULL)
     {
     if(temp-> next-> data == data)
         temp -> next = temp -> next -> next;
@@ -181,7 +181,7 @@ void removeelement(Node* &head , int data)
 
 void print(Node* &head)
 {
-    if(head == NULL and cout << endl)
+    if(head == NULL && cout << endl)
         return;
     cout << head->data << " ";
     print(head -> next);

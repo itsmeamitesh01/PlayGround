@@ -3,7 +3,7 @@
     शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते ॥
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

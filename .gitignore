@@ -1,0 +1,12 @@
+# C++ build files
+*.exe
+*.obj
+*.ilk
+*.pdb
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 class Teacher {
@@ -11,7 +11,7 @@ class Teacher {
 // In this case, salary is private and cannot be accessed directly outside the class
 
 private:
-    double salary;
+    double salary = 0.0;
 
 public:
 
@@ -24,6 +24,7 @@ public:
     
     // Non parameterized constructor
     Teacher() {
+        name = "Ramesh"; // Default value for name
         dept = "Computer Science"; //  Default value for dept
         cout << "Hi, I am Non-para constructor of Teacher class" << endl;
     }   
@@ -40,14 +41,14 @@ public:
     }
 
     // Copy constructor
-    Teacher(Teacher &org_obj) { //Pass by reference
+    Teacher(Teacher &xyz) { //Pass by reference
         cout << "Hi, I am Custom-Copy constructor of Teacher class" << endl;
 
-        this->name = org_obj.name; // Using 'this' pointer to refer to the current object's members
-        this->dept = org_obj.dept;
-        this->subject = org_obj.subject;
-        this->salary = org_obj.salary;
-        this->exp = org_obj.exp; // Copying experience from the original object
+        this->name = xyz.name; // Using 'this' pointer to refer to the current object's members
+        this->dept = xyz.dept;
+        this->subject = xyz.subject;
+        this->salary = xyz.salary;
+        this->exp = xyz.exp; // Copying experience from the original object
     } 
     //Member functions / Methods
     void changeDept(string newDept) {
@@ -78,11 +79,12 @@ int main() {
     // Creating an object of the Teacher class
     Teacher t1; // Non-parameterized constructor is called here
     
+    // This is how we can tweak an object's data
     t1.name = "John Doe";  
-    // t1.dept = "Mathematics"; 
+    t1.dept = "Mathematics"; 
     t1.subject = "Algebra";
     t1.setSalary(55000); 
-    // t1.getinfo();
+    t1.getinfo();
     
     cout << "------------------------" << endl;
 
